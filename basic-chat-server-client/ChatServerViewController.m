@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    // code to add background image, don't need it yet
+    //UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"newtex.png"]];
+    //[self.view addSubview:imgView];
+    //[self.view sendSubviewToBack:imgView];
+    
+    // just set background color
+    self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning
