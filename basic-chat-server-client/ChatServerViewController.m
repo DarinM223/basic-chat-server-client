@@ -24,8 +24,8 @@
     //[self.view addSubview:imgView];
     //[self.view sendSubviewToBack:imgView];
     
-    // just set background color
-    self.view.backgroundColor = [UIColor greenColor];
+    // code to set background color, don't need it yet
+    //self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning
