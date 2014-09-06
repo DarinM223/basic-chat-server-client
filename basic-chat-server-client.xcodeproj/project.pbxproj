@@ -22,6 +22,8 @@
 		934621A419B698E700A8CCF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 934621A219B698E700A8CCF7 /* InfoPlist.strings */; };
 		934621A619B698E700A8CCF7 /* basic_chat_server_clientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 934621A519B698E700A8CCF7 /* basic_chat_server_clientTests.m */; };
 		934621B219B6A0BD00A8CCF7 /* newtex.png in Resources */ = {isa = PBXBuildFile; fileRef = 934621B119B6A0BD00A8CCF7 /* newtex.png */; };
+		937845DA19BA2D8100BB77B6 /* ChatServerSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937845D919BA2D8100BB77B6 /* ChatServerSignupViewController.m */; };
+		937845DD19BA2DAB00BB77B6 /* ChatServerLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937845DC19BA2DAB00BB77B6 /* ChatServerLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		934621A319B698E700A8CCF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		934621A519B698E700A8CCF7 /* basic_chat_server_clientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = basic_chat_server_clientTests.m; sourceTree = "<group>"; };
 		934621B119B6A0BD00A8CCF7 /* newtex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newtex.png; sourceTree = "<group>"; };
+		937845D819BA2D8100BB77B6 /* ChatServerSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatServerSignupViewController.h; sourceTree = "<group>"; };
+		937845D919BA2D8100BB77B6 /* ChatServerSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatServerSignupViewController.m; sourceTree = "<group>"; };
+		937845DB19BA2DAB00BB77B6 /* ChatServerLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatServerLoginViewController.h; sourceTree = "<group>"; };
+		937845DC19BA2DAB00BB77B6 /* ChatServerLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatServerLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +123,15 @@
 				9346218919B698E700A8CCF7 /* ChatServerAppDelegate.h */,
 				9346218A19B698E700A8CCF7 /* ChatServerAppDelegate.m */,
 				9346218C19B698E700A8CCF7 /* Main.storyboard */,
+				937845D819BA2D8100BB77B6 /* ChatServerSignupViewController.h */,
+				937845D919BA2D8100BB77B6 /* ChatServerSignupViewController.m */,
 				9346218F19B698E700A8CCF7 /* ChatServerViewController.h */,
 				9346219019B698E700A8CCF7 /* ChatServerViewController.m */,
 				934621B119B6A0BD00A8CCF7 /* newtex.png */,
 				9346219219B698E700A8CCF7 /* Images.xcassets */,
 				9346218119B698E700A8CCF7 /* Supporting Files */,
+				937845DB19BA2DAB00BB77B6 /* ChatServerLoginViewController.h */,
+				937845DC19BA2DAB00BB77B6 /* ChatServerLoginViewController.m */,
 			);
 			path = "basic-chat-server-client";
 			sourceTree = "<group>";
@@ -255,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9346218719B698E700A8CCF7 /* main.m in Sources */,
+				937845DA19BA2D8100BB77B6 /* ChatServerSignupViewController.m in Sources */,
+				937845DD19BA2DAB00BB77B6 /* ChatServerLoginViewController.m in Sources */,
 				9346219119B698E700A8CCF7 /* ChatServerViewController.m in Sources */,
 				9346218B19B698E700A8CCF7 /* ChatServerAppDelegate.m in Sources */,
 			);
@@ -461,6 +473,7 @@
 				934621AB19B698E700A8CCF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		934621AC19B698E700A8CCF7 /* Build configuration list for PBXNativeTarget "basic-chat-server-clientTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				934621AE19B698E700A8CCF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

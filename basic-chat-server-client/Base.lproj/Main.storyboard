@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="739" y="20"/>
         </scene>
-        <!--View Controller - Login-->
+        <!--Chat Server Login View Controller - Login-->
         <scene sceneID="0Cd-kS-NTA">
             <objects>
-                <viewController title="Login" id="XhP-Ft-pFv" sceneMemberID="viewController">
+                <viewController title="Login" id="XhP-Ft-pFv" customClass="ChatServerLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dxI-XL-mXr"/>
                         <viewControllerLayoutGuide type="bottom" id="Ck3-Il-qxq"/>
@@ -73,7 +73,7 @@
                                 <rect key="frame" x="20" y="180" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyQ-k5-Nf2">
                                 <rect key="frame" x="20" y="218" width="280" height="30"/>
@@ -81,6 +81,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClicked:" destination="XhP-Ft-pFv" eventType="touchDown" id="hhu-j1-4Qq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -94,15 +97,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Nuf-i3-x4X"/>
+                    <connections>
+                        <outlet property="loginButton" destination="tyQ-k5-Nf2" id="2iy-jM-xuS"/>
+                        <outlet property="passwordField" destination="Sox-Oe-leg" id="QPf-vK-vkR"/>
+                        <outlet property="usernameField" destination="Z24-rS-A9e" id="LbL-sf-jHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPH-ei-7vC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="-195"/>
+            <point key="canvasLocation" x="1276" y="-203"/>
         </scene>
-        <!--View Controller - Signup-->
+        <!--Chat Server Signup View Controller - Signup-->
         <scene sceneID="EVF-eg-rkU">
             <objects>
-                <viewController title="Signup" id="KYc-Le-v4g" sceneMemberID="viewController">
+                <viewController title="Signup" id="KYc-Le-v4g" customClass="ChatServerSignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="adv-0j-REa"/>
                         <viewControllerLayoutGuide type="bottom" id="dWF-M3-30p"/>
@@ -121,15 +129,24 @@
                                 <rect key="frame" x="20" y="180" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-YK-1oh">
-                                <rect key="frame" x="20" y="218" width="280" height="30"/>
+                                <rect key="frame" x="20" y="256" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClicked:" destination="KYc-Le-v4g" eventType="touchUpInside" id="LcO-An-D9x"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="reenter password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-Yw-F5h">
+                                <rect key="frame" x="20" y="218" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -138,10 +155,17 @@
                             <constraint firstItem="UJl-Yl-E13" firstAttribute="leading" secondItem="k5v-ir-Ufj" secondAttribute="leading" constant="20" id="5nY-PK-PhP"/>
                             <constraint firstAttribute="trailing" secondItem="UJl-Yl-E13" secondAttribute="trailing" constant="20" id="HHA-wI-zxy"/>
                             <constraint firstItem="eLg-X0-KOt" firstAttribute="leading" secondItem="k5v-ir-Ufj" secondAttribute="leading" constant="20" id="ZSI-Uq-mzh"/>
+                            <constraint firstItem="Kap-Yw-F5h" firstAttribute="leading" secondItem="k5v-ir-Ufj" secondAttribute="leading" constant="20" id="crt-PT-j6K"/>
+                            <constraint firstAttribute="trailing" secondItem="Kap-Yw-F5h" secondAttribute="trailing" constant="20" id="e6z-n4-mgV"/>
                             <constraint firstAttribute="centerX" secondItem="sZN-YK-1oh" secondAttribute="centerX" id="tZC-gM-03c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Signup" id="ebf-Yb-5Fa"/>
+                    <connections>
+                        <outlet property="passwordField" destination="eLg-X0-KOt" id="YZF-JJ-K34"/>
+                        <outlet property="passwordReenterField" destination="Kap-Yw-F5h" id="03K-ad-TiX"/>
+                        <outlet property="usernameField" destination="UJl-Yl-E13" id="ddT-5i-tal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwK-eA-aPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
